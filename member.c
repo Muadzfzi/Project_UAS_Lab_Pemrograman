@@ -1,4 +1,4 @@
-void tambahAnggota(const char *namaPembeli) {
+void tambahAnggota(const char *namaPembeli) { // Fungsi penambahan anggota
     if (jumlahAnggota >= MAKS_ANGGOTA) {
         printf("Kapasitas member penuh.\n");
         return;
@@ -16,7 +16,7 @@ void tambahAnggota(const char *namaPembeli) {
     printf("Member akan memperoleh diskon sebesar 5 persen tiap pembeliannya. Silahkan berbelanja lagi untuk memperoleh diskon!\n");
 }
 
-int cekAnggota(const char* nama) {
+int cekAnggota(const char* nama) { // Fungsi pengecekan anggota
     for (int i = 0; i < jumlahAnggota; i++) {
         if (strcmp(anggota[i].nama, nama) == 0) {
             return anggota[i].adalahAnggota;
