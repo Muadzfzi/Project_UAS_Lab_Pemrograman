@@ -12,19 +12,20 @@ void prosesPembayaran(Produk produk[], int jumlahProduk) {
     printf("Masukkan nama pembeli: ");
     scanf("%s", namaPembeli);
 
-    for (int i = 0; i < jumlahProduk; i++) {
+    // Melakukan iterasi verdasarkan array produk
+    for (int i = 0; i < jumlahProduk; i++) { 
         if (strcmp(produk[i].nama, namaProduk) == 0) {
             if (produk[i].jumlah >= jumlah) {
                 total = jumlah * produk[i].harga;
 
-                // Menjumlahkan total pembayaran setelah memperhitungkan diskon pada member
+                // Menjumlahkan total pembayaran setelah memperhitungkan diskon khusus member
                 total = hitungTotalDenganDiskon(namaPembeli, total);
-
-                produk[i].jumlah -= jumlah; // Mengurangi stok
+                produk[i].jumlah -= jumlah; // Mengurangi stok produk setelah pembelian
                 printf("Total yang harus dibayar: Rp %.2f\n", total);
                 printf("Pembayaran berhasil!\n");
+                // Menambahkan pembeli sebagai member jika pembelian mencapai lebih dari 50000
                 if (total > 50000 && !cekAnggota(namaPembeli)) {
-                    tambahAnggota(namaPembeli);  // Menambahkan pembeli sebagai member jika pembelian mencapai lebih dari 50000
+                    tambahAnggota(namaPembeli);  
                 }
                 return;
             } else {
