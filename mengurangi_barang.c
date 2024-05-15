@@ -41,4 +41,6 @@ void kurangiJumlahProduk(Produk produk[], int jumlahProduk) {
     printf("Produk tidak ditemukan.\n");  // Jika produk tidak ditemukan
 }
 
-int main(){};
+int main(){
+    kurangiJumlahProduk(produk, jumlahProduk); // memanggil fungsi
+};
