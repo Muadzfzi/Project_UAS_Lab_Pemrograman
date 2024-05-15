@@ -21,6 +21,6 @@ pada pemilihan opsi, user diharuskan memilih opsi yang ada yang berupa 6 opsi :
 4. Simpan data produk ke file
    (pada opsi ini user bisa menyimpan data produk yang mau diinput kedalam file berbentuk txt)
 5. Lakukan pembayaran
-   (pada opsi ini user bisa menggunakan opsi pembayaran suatu produk)
+   (pada opsi ini user dapat melakukan opsi pembayaran pada produk sesuai dengan pembelian, opsi ini juga menyediakan penambahan member secara otomatis apabila telah melakukan pembelian > 50000 )
 6. Keluar
    (pada opsi ini user bisa menggunakannya untuk keluar dari kode program)   
