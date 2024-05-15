@@ -1,3 +1,4 @@
+// Fungsi untuk memproses pembayaran produk
 void prosesPembayaran(Produk produk[], int jumlahProduk) {
     char namaProduk[PANJANG_NAMA_PRODUK];
     char namaPembeli[100];
@@ -16,13 +17,14 @@ void prosesPembayaran(Produk produk[], int jumlahProduk) {
             if (produk[i].jumlah >= jumlah) {
                 total = jumlah * produk[i].harga;
 
+                // Menjumlahkan total pembayaran setelah memperhitungkan diskon pada member
                 total = hitungTotalDenganDiskon(namaPembeli, total);
 
                 produk[i].jumlah -= jumlah; // Mengurangi stok
                 printf("Total yang harus dibayar: Rp %.2f\n", total);
                 printf("Pembayaran berhasil!\n");
                 if (total > 50000 && !cekAnggota(namaPembeli)) {
-                    tambahAnggota(namaPembeli);  // Menambahkan pembeli sebagai anggota jika belum
+                    tambahAnggota(namaPembeli);  // Menambahkan pembeli sebagai member jika pembelian mencapai lebih dari 50000
                 }
                 return;
             } else {
