@@ -19,3 +19,8 @@ int login() {
         return 0;
     }
 }
+
+int main() {
+    login();
+    return 0;
+}
