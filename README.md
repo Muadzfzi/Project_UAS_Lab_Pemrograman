@@ -1,5 +1,5 @@
-# Project_UAS_Lab_Pemrograman
-PROJECT UAS LAB PEMROGRAMAN
-1). MUADZ FAUZI (2308107010042)
-2). MAHARDIKA SHIDDIQ ANSHARI (2308107010032)
-3). TINSARI RAUHANA (2308107010038)
+login.c
+(digunakan untuk login kedalam kode program dengan menggunakan username dan juga password)
+
+menambahkanproduk.c
+(digunakan untuk menambah data produk kedalam kode program yang berisikan nama,harga, dan jumlah dari barang tersebut)
