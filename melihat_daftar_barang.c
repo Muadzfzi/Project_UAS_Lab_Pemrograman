@@ -28,4 +28,6 @@ void tampilkanProduk(Produk produk[], int jumlahProduk) {
 
     printf("---------------------------------------------------\n");
 }
-int main(){};
+int main(){
+    tampilkanProduk(produk, jumlahProduk); // memanggil fungsi
+};
