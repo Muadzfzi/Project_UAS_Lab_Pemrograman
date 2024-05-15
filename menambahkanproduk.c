@@ -31,3 +31,11 @@ void tambahProduk(Produk produk[], int *jumlahProduk) {
 
     (*jumlahProduk)++;
 }
+int main (){
+    tambahProduk(produk, &jumlahProduk);
+    // Contoh output untuk verifikasi
+    printf("Nama Produk: %s\n", produk[0].nama);
+    printf("Harga Produk: %.2f\n", produk[0].harga);
+    printf("Jumlah Produk: %d\n", produk[0].jumlah);
+    return 0;
+}
