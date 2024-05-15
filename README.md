@@ -4,11 +4,11 @@ PROJECT UAS LAB PEMROGRAMAN
 2). MAHARDIKA SHIDDIQ ANSHARI (2308107010032)
 3). TINSARI RAUHANA (2308107010038)
 
-Program Sistem Kasir Sederhana dibuat
+Program Sistem Kasir Sederhana, program ini dibuat untuk membantu user atau pengguna dalam hal transaksi untuk suatu penjualan.
 Sebelum menggunakan kode program sistem kasir sederhana, diharapkan agar membaca panduan berikut :
 
 -Proses Login
-kode login digunakan sebagai pembuka awal kode program dimana user harus memasukkan username yang berupa pegawai dan password yang berupa pegawai123.
+(kode login digunakan sebagai pembuka awal kode program dimana user harus memasukkan username yang berupa pegawai dan password yang berupa pegawai123)
 
 -Pemilihan opsi
 pada pemilihan opsi, user diharuskan memilih opsi yang ada yang berupa 6 opsi :
