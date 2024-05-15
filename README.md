@@ -23,5 +23,4 @@ pada pemilihan opsi, user diharuskan memilih opsi yang ada yang berupa 6 opsi :
 5. Lakukan pembayaran
    (Pada opsi ini user dapat melakukan opsi pembayaran pada produk sesuai dengan pembelian, opsi ini juga menyediakan penambahan member secara otomatis apabila telah melakukan pembelian > 50000, member akan memperoleh keuntungan diskon sebesar 5% pada tiap pembelian selanjutnya)
 6. Keluar
-   (Pada opsi ini user bisa menggunakannya untuk keluar dari kode program)
-
+   (Pada opsi ini user bisa menggunakannya untuk keluar dari kode program)   
