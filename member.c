@@ -13,8 +13,8 @@ void tambahAnggota(const char *namaPembeli) {
     sprintf(anggota[jumlahAnggota].tanggalBergabung, "%04d-%02d-%02d",
             tm_struct->tm_year + 1900, tm_struct->tm_mon + 1, tm_struct->tm_mday);
     anggota[jumlahAnggota].adalahAnggota = 1;  // Menandakan bahwa ini adalah member
-
     jumlahAnggota++;
+    
     printf("Selamat! %s sekarang adalah member baru kami.\n", namaPembeli);
     printf("Member akan memperoleh diskon sebesar 5 persen tiap pembeliannya. Silahkan berbelanja lagi untuk memperoleh diskon!\n");
 }
@@ -26,5 +26,5 @@ int cekAnggota(const char* nama) {
             return anggota[i].adalahAnggota;
         }
     }
-    return 0; 
+    return 0; // Mengembalikan nilai 0 apabila pembeli bukan member
 }
