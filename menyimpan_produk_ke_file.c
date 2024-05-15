@@ -31,4 +31,6 @@ void simpanProdukKeFile(Produk produk[], int jumlahProduk) {
     fclose(file);  // Menutup file
     printf("Data produk berhasil disimpan ke file.\n");
 }
-int main(){};
+int main(){
+    simpanProdukKeFile(produk, jumlahProduk); // memanggil fungsi
+};
