@@ -122,37 +122,37 @@ void simpanProdukKeFile(Produk produk[], int jumlahProduk) {
     printf("Data produk berhasil disimpan ke file.\n");
 }
 
-// Fungsi untuk menambah anggota baru
+// Fungsi penambahan member jika melakukan pembelian produk > 50000
 void tambahAnggota(const char *namaPembeli) {
     if (jumlahAnggota >= MAKS_ANGGOTA) {  // Cek apakah kapasitas anggota sudah penuh
         printf("Kapasitas anggota penuh.\n");
         return;
     }
 
-    strcpy(anggota[jumlahAnggota].nama, namaPembeli);  // Menyimpan nama pembeli sebagai anggota baru
+    strcpy(anggota[jumlahAnggota].nama, namaPembeli);  // Menyimpan nama pembeli sebagai member baru
     time_t sekarang = time(NULL);                      // Mendapatkan waktu sekarang
     struct tm *tm_struct = localtime(&sekarang);       // Mengubah waktu ke struktur tm
     sprintf(anggota[jumlahAnggota].tanggalBergabung, "%04d-%02d-%02d",
             tm_struct->tm_year + 1900, tm_struct->tm_mon + 1, tm_struct->tm_mday);  // Format tanggal bergabung
-    anggota[jumlahAnggota].adalahAnggota = 1;  // Menandakan bahwa ini adalah anggota
+    anggota[jumlahAnggota].adalahAnggota = 1;  // Menandakan bahwa pembeli merupakan member
 
-    jumlahAnggota++;  // Menambah jumlah anggota
+    jumlahAnggota++;  // Menambah jumlah member
     printf("Selamat! %s sekarang adalah anggota baru kami.\n", namaPembeli);
     printf("Anggota akan memperoleh diskon sebesar 5 persen tiap pembeliannya. Silahkan berbelanja lagi untuk memperoleh diskon!\n");
 }
 
-// Fungsi untuk mengecek apakah pembeli adalah anggota
+// Fungsi untuk mengecek apakah pembeli merupakan member
 int cekAnggota(const char* nama) {
     // Mencari anggota berdasarkan nama
     for (int i = 0; i < jumlahAnggota; i++) {
         if (strcmp(anggota[i].nama, nama) == 0) {
-            return anggota[i].adalahAnggota;  // Mengembalikan status keanggotaan
+            return anggota[i].adalahAnggota;  // Mengembalikan status member
         }
     }
     return 0;  // Mengembalikan 0 jika tidak ditemukan
 }
 
-// Fungsi untuk memproses pembayaran
+// Fungsi untuk memproses pembayaran produk
 void prosesPembayaran(Produk produk[], int jumlahProduk) {
     char namaProduk[PANJANG_NAMA_PRODUK];
     char namaPembeli[100];
